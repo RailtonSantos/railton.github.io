@@ -12,6 +12,7 @@ const Projects = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -23,12 +24,15 @@ const Projects = () => {
     }
   }, []);
 
+  // Show only first 4 projects by default, or all if showAll is true
+  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+
   return (
     <section id="projects">
       <Container>
         <div className="project-wrapper">
           <Title title="Some Projects" />
-          {projects.map((project) => {
+          {displayedProjects.map((project) => {
             const { title, info, info2, info3, involvement, url, repo, img, id } = project;
 
             return (
@@ -117,6 +121,21 @@ const Projects = () => {
               </Row>
             );
           })}
+
+          {/* See More / Show Less Button */}
+          {projects.length > 4 && (
+            <Row style={{ padding: `2rem 0`, justifyContent: 'center' }}>
+              <Col lg={12} style={{ textAlign: 'center' }}>
+                <button
+                  className="cta-btn cta-btn--hero"
+                  onClick={() => setShowAll(!showAll)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  {showAll ? 'Show Less' : 'See More Projects'}
+                </button>
+              </Col>
+            </Row>
+          )}
         </div>
       </Container>
     </section>

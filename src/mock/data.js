@@ -4,12 +4,12 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'Railton Santos', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: 'Full Stack Developer Freelancer', // e.g: Welcome to my website
+  description: 'Full Stack Developer', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  logo: 'favicon.png',
+  logo: 'rai-logo.png',
   title: `sup! `,
   name: 'Railton Santos',
   subtitle: 'Full Stack Developer',
@@ -19,11 +19,14 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne: `From São Paulo, Brazil to <span class="nowrap">Brisbane - Australia</span>`,
-  paragraphTwo: `I am a Creative Full Stack Developer, with 6+ years experience working with web/app solutions, who has passion for making users life easier!`,
-  paragraphThree: `<b>PHP</b> and <b>JS</b> are my two main weapons as my knowledge pool includes <b>React Native</b>, <b>Gatsby</b>, <b>VueJs</b>, <b>MySQL</b>, <b>NodeJs</b> and some cool tools such as <b>WebPack</b>, <b>Gulp</b>, <b>Grunt</b>...`,
-  paragraphFour: `I also have extensive experience with UI/UX design... I’m able to perform great tasks, create pretty layouts and prototypes using <b>Photoshop</b>, <b>Illustrator</b>, <b>InVision</b>...`,
-  paragraphFive: `I like to kill bugs while drinking strong coffee ☕`,
+  paragraphOne: `Brazilian from São Paulo. Based in <b>Brisbane, QLD, Australia</b>.`,
+  paragraphTwo: `Creative Full Stack Developer with 10+ years of experience building web and mobile products.`,
+  paragraphThree: `Strong logical thinking and problem solving skills, with a focus on breaking down complex problems into clean, scalable and efficient solutions.`,
+  paragraphFour: `Core stack includes <b>PHP</b>, <b>JS/TypeScript</b>, with experience in React, React Native, Vue.js, Node.js and databases like MySQL and MongoDB.`,
+  paragraphFive: `Good experience with Python and C#, along with strong <b>Shopify</b> development experience, including building and maintaining <span style="white-space: nowrap;">e-commerce</span> stores and custom online platforms.`,
+  paragraphSix: `Experience with modern development tools and LLM-based workflows to support coding, debugging, refactoring, testing and rapid prototyping, always focusing on clean and maintainable solutions.`,
+  paragraphSeven: `Focused on clean UI/UX, performance and building smooth user experiences with strong attention to detail across the full product.`,
+  paragraphEight: `<b>I like to kill bugs while drinking strong coffee ☕</b>`,
   resume: 'RailtonSantos.pdf',
 };
 
@@ -33,11 +36,11 @@ export const projectsData = [
     id: nanoid(),
     img: 'propertymash.gif',
     title: 'Propertymash ',
-    info: 'Web portal',
+    info: 'Web Portal',
     info2:
-      'Real estate website with a large-scale search engine which presents data of 500+ new and off the plan apartments accross the biggest cities in Australia.',
+      'Real estate website with a large-scale search engine which presents data of 500+ new and off the plan apartments across the biggest cities in Australia.',
     info3:
-      'Entirely built using Wordpress integrated with the FoxEnterprise CRM providing the best reliability for the client to update their data and for the end user to access it in top speed... Also built some special WP plugins to please the client needs...',
+      'Entirely built using Wordpress integrated with the FoxEnterprise CRM providing the best reliability for the client to update their data and for the end user to access it with high performance... Also built some special WP vanilla plugins to meet the client’s needs...',
     url: 'https://propertymash.com',
     repo: '',
     involvement: ['Design Layout', 'Front End', 'Back End'],
@@ -48,9 +51,9 @@ export const projectsData = [
     title: 'Penny Place',
     info: 'iOS App',
     info2:
-      'Interactive iPad application vuejs+cordova built to provide the fastest access to off the plan apartments information and a powerful presentation to help the client showcase the project to their potential buyers.',
+      'Interactive iPad application Vue.js + Cordova built to provide the fastest access to off the plan apartments information and a powerful presentation to help the client showcase the project to their potential buyers.',
     info3:
-      'All the data is syncronized with a powerful sales crm running in the back and providing real time prospects status to every single salesperson.',
+      'All the data is synchronized with a powerful sales CRM running in the back and providing real time prospects status to every single salesperson.',
     url: 'https://apps.apple.com/ro/app/penny-place/id1477788500',
     repo: '',
     involvement: ['Design Layout', 'Front End'],
@@ -70,6 +73,34 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'wfc.png',
+    title: 'WFC eCommerce',
+    info: 'Shopify platform',
+    info2:
+      'Custom Shopify-based e-commerce store focused on performance, conversion optimization and smooth user experience for online retail.',
+    info3:
+      'Worked on Shopify development including theme customization, UI/UX improvements, performance optimization and integration of third-party apps and APIs. Supported multiple e-commerce features such as product display, checkout flow enhancements and store maintenance for a scalable online retail experience.',
+    url: 'https://wfc.com.au/',
+    repo: '',
+    involvement: ['Front End', 'UI/UX', 'Shopify'],
+  },
+  {
+    id: nanoid(),
+    img: 'wp.png',
+    title: 'Custom Websites',
+    info: 'WordPress solutions',
+    info2:
+      'Custom-built WordPress websites using modern development workflows and advanced integrations, focused on performance, scalability and tailored client requirements.',
+    info3:
+      'Developed custom WordPress solutions using technologies such as Laravel and React. Built beyond standard themes, including custom functionality, optimized performance layers and scalable architectures for complex business needs.',
+    info4:
+      'Notable projects include Logan Leisure Centres and Digital Child, delivering high-performance platforms with modern frontend and backend integrations.',
+    url: 'https://loganleisurecentres.com.au/',
+    repo: '',
+    involvement: ['Design Layout', 'Front End', 'Back End'],
+  },
+  {
+    id: nanoid(),
     img: 'wms.gif',
     title: 'WMS',
     info: 'Website',
@@ -86,7 +117,7 @@ export const projectsData = [
     title: 'Panorama',
     info: 'iOS App',
     info2:
-      'An interactive sales book application which provides everything a salesperson needs to showcase a project to pontential buyers with the fastest access to documents and syncronized data.',
+      'An interactive sales book application which provides everything a salesperson needs to showcase a project to potential buyers with the fastest access to documents and syncronized data.',
     info3: '',
     url: 'https://apps.apple.com/us/app/panorama-top-of-the-town/id1479155980',
     repo: '',
@@ -98,7 +129,7 @@ export const projectsData = [
     title: 'Moda',
     info: 'iOS/Kiosk App',
     info2:
-      'A powerful interactive cross-platform sales book application made to attend everything a sales person needs to run an amazing presentation and captivate the attention of potential buyers from start to finish of the prospect...',
+      'A powerful interactive cross-platform sales book application made to attend everything a salesperson needs to run an amazing presentation and captivate the attention of potential buyers from start to finish of the prospect...',
     info3: '',
     url: 'https://modathehills.com.au/',
     repo: '',

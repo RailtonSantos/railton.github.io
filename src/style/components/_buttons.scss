@@ -3,10 +3,15 @@
   display: inline-block;
   position: relative;
   padding: 0.8rem $default-font-size;
+  font-size: $default-font-size;
   font-weight: bold;
   line-height: 1;
   z-index: 1;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+
+  &:focus {
+    outline: 0;
+  }
 
   &::after {
     content: '';
@@ -23,12 +28,12 @@
 
 /* Hero Style */
 .cta-btn--hero {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-image: linear-gradient(135deg, $tertiary-color 0%, $secondary-color 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border-image: linear-gradient(135deg, $tertiary-color 0%, $secondary-color 100%);
   border-image-slice: 1;
   margin-top: .5rem;
   cursor: pointer;
@@ -41,7 +46,7 @@
   }
 
   &::after {
-    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    background-image: linear-gradient(135deg, $tertiary-color 0%, $secondary-color 100%);
 
     // Responsive Button hero style
     @include respond(phone) {
@@ -92,6 +97,6 @@
   cursor: pointer;
 
   i {
-    color: $primary-color;
+    color: $tertiary-color;
   }
 }
