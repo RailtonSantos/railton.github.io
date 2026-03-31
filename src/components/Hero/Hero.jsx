@@ -7,10 +7,14 @@ import HeroImg from '../Image/HeroImg';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { logo, title, name, subtitle, cta } = hero;
+  const { logo, title, name, subtitles=[], cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const [index, setIndex] = useState(0);
+  const [text, setText] = useState('');
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -22,11 +26,38 @@ const Header = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (!subtitles.length) return;
+
+    const current = subtitles[index];
+    let speed = deleting ? 40 : 90;
+
+    const timeout = setTimeout(() => {
+      if (!deleting) {
+        setText(current.substring(0, text.length + 1));
+
+        if (text === current) {
+          setTimeout(() => setDeleting(true), 1200);
+        }
+      } else {
+        setText(current.substring(0, text.length - 1));
+
+        if (text === '') {
+          setDeleting(false);
+          setIndex((prev) => (prev + 1) % subtitles.length);
+        }
+      }
+    }, speed);
+
+    return () => clearTimeout(timeout);
+  }, [text, deleting, index, subtitles]);
+
   return (
     <section id="hero" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <HeroImg alt="logo" filename={logo} className="HeroImg" />
+
           <h1 className="hero-title">
             {title || 'Hi, my name is'}
             <span className="nowrap">
@@ -34,13 +65,13 @@ const Header = () => {
               <span className="text-color-main">{name || 'Your Name'}</span>
             </span>
             <br />
-            {subtitle || "I'm the Unknown Developer."}
+            <span className="terminal-cursor">{text}</span>
           </h1>
         </Fade>
+
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta px-2">
             <Link to="about" smooth duration={1000} className="down">
-              {/* {cta || 'Know more'} */}
               <i className="fa fa-angle-down fa-2x" aria-hidden="true" />
             </Link>
           </p>

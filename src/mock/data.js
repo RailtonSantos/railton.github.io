@@ -2,31 +2,31 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Railton Santos', // e.g: 'Name | Developer'
-  lang: 'en', // e.g: en, es, fr, jp
-  description: 'Full Stack Developer', // e.g: Welcome to my website
+  title: 'Railton Santos',
+  lang: 'en',
+  description: 'Full Stack Developer | UI/UX & Motion',
 };
 
 // HERO DATA
 export const heroData = {
   logo: 'rai-logo.png',
-  title: `sup! `,
+  title: `Hi, `,
   name: 'Railton Santos',
-  subtitle: 'Full Stack Developer',
-  cta: '',
+  subtitles: ['Full Stack Dev', 'UI/UX & Motion Dev', 'Bug Hunter 🪲'],
+  cta: 'Open to opportunities',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne: `Brazilian from São Paulo. Based in <b>Brisbane, QLD, Australia</b>.`,
-  paragraphTwo: `Creative Full Stack Developer with 10+ years of experience building web and mobile products.`,
-  paragraphThree: `Strong logical thinking and problem solving skills, with a focus on breaking down complex problems into clean, scalable and efficient solutions.`,
-  paragraphFour: `Core stack includes <b>PHP</b>, <b>JS/TypeScript</b>, with experience in React, React Native, Vue.js, Node.js and databases like MySQL and MongoDB.`,
-  paragraphFive: `Good experience with Python and C#, along with strong <b>Shopify</b> development experience, including building and maintaining <span style="white-space: nowrap;">e-commerce</span> stores and custom online platforms.`,
-  paragraphSix: `Experience with modern development tools and LLM-based workflows to support coding, debugging, refactoring, testing and rapid prototyping, always focusing on clean and maintainable solutions.`,
-  paragraphSeven: `Focused on clean UI/UX, performance and building smooth user experiences with strong attention to detail across the full product.`,
-  paragraphEight: `<b>I like to kill bugs while drinking strong coffee ☕</b>`,
+  paragraphOne: `<b>Brazilian Full Stack Developer based in Brisbane-AU, focused on UI/UX, motion, and interactive digital experiences.</b>`,
+  paragraphTwo: `Extensive experience with WordPress development, building custom plugins, integrations, and performance-focused websites for a wide range of business needs.`,
+  paragraphThree: `Strong background in Shopify development, delivering scalable <b style="white-space: nowrap;">e-commerce</b> solutions with a focus on user experience, conversion, and performance.`,
+  paragraphFour: `<b>Experienced in building web and mobile applications using Laravel, React Native, Vue.js, and Node.js.</b>`,
+  paragraphFive: `<b>Core stack includes PHP, JS/TypeScript, Vue.js, Node.js, MySQL, and MongoDB.</b>`,
+  paragraphSix: `Additional experience with <b>Python</b> and <b>C#</b> for backend services, APIs, and automation tasks, including integration with modern development workflows.`,
+  paragraphSeven: `Comfortable working with modern development workflows and <b>LLM-based tools</b> for refining, debugging and rapid prototyping, with a strong focus on performance, clean architecture, and user experience.`,
+  paragraphEight: `<b>I enjoy building cool stuff over a strong coffee <img height="20" src="/static/164fa633b66e3dad5f8f2159adfe9f5b/coffee.png"/></b>`,
   resume: 'RailtonSantos.pdf',
 };
 
@@ -35,12 +35,12 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'propertymash.gif',
-    title: 'Propertymash ',
+    title: 'Propertymash',
     info: 'Web Portal',
     info2:
-      'Real estate website with a large-scale search engine which presents data of 500+ new and off the plan apartments across the biggest cities in Australia.',
+      'Real estate platform handling 500+ properties across major Australian cities with optimized search performance.',
     info3:
-      'Entirely built using Wordpress integrated with the FoxEnterprise CRM providing the best reliability for the client to update their data and for the end user to access it with high performance... Also built some special WP vanilla plugins to meet the client’s needs...',
+      'Built with Wordpress + FoxEnterprise CRM, including custom plugins and performance-focused architecture for scalability and fast data access.',
     url: 'https://propertymash.com',
     repo: '',
     involvement: ['Design Layout', 'Front End', 'Back End'],
@@ -51,9 +51,9 @@ export const projectsData = [
     title: 'Penny Place',
     info: 'iOS App',
     info2:
-      'Interactive iPad application Vue.js + Cordova built to provide the fastest access to off the plan apartments information and a powerful presentation to help the client showcase the project to their potential buyers.',
+      'Interactive iPad app built with Vue.js + Cordova for fast access to property data and high-impact sales presentations.',
     info3:
-      'All the data is synchronized with a powerful sales CRM running in the back and providing real time prospects status to every single salesperson.',
+      'Real-time synchronization with CRM, enabling live tracking of prospects across the sales team.',
     url: 'https://apps.apple.com/ro/app/penny-place/id1477788500',
     repo: '',
     involvement: ['Design Layout', 'Front End'],
@@ -65,9 +65,9 @@ export const projectsData = [
     info: 'Transparency App & Analytics Portal',
     involvement: ['Front End', 'Back End'],
     info2:
-      'The app enables technicians to record personalized video explanations of vehicle conditions, repairs needed, and parts required directly on their mobile device. Videos are instantly shared with customers via text message or email. Built with React Native for both iOS and Android, featuring QR code authentication and seamless video upload.',
+      'Mobile app enabling technicians to record and send personalized vehicle inspection videos via SMS/email. Built with React Native for iOS and Android, featuring QR code authentication and streamlined video upload workflow.',
     info3:
-      'Location and store managers access a comprehensive  Laravel admin portal to track video analytics, monitor technician performance and manage accounts.',
+      'Includes a comprehensive Laravel-based admin portal for analytics, performance tracking, and account management.',
     url: 'https://www.youtube.com/watch?v=edpHzI4BGwM',
     repo: '',
   },
@@ -77,9 +77,9 @@ export const projectsData = [
     title: 'WFC eCommerce',
     info: 'Shopify platform',
     info2:
-      'Custom Shopify-based e-commerce store focused on performance, conversion optimization and smooth user experience for online retail.',
+      'High-performance Shopify store built with a strong focus on conversion optimization, UX clarity, and seamless shopping experience.',
     info3:
-      'Worked on Shopify development including theme customization, UI/UX improvements, performance optimization and integration of third-party apps and APIs. Supported multiple e-commerce features such as product display, checkout flow enhancements and store maintenance for a scalable online retail experience.',
+      'Full theme customization, performance tuning, and integration with third-party apps and APIs to support a scalable and flexible e-commerce ecosystem.',
     url: 'https://wfc.com.au/',
     repo: '',
     involvement: ['Front End', 'UI/UX', 'Shopify'],
@@ -90,11 +90,10 @@ export const projectsData = [
     title: 'Custom Websites',
     info: 'WordPress solutions',
     info2:
-      'Custom-built WordPress websites using modern development workflows and advanced integrations, focused on performance, scalability and tailored client requirements.',
+      'Custom WordPress platforms with modern architecture, focused on scalability and performance.',
     info3:
-      'Developed custom WordPress solutions using technologies such as Laravel and React. Built beyond standard themes, including custom functionality, optimized performance layers and scalable architectures for complex business needs.',
-    info4:
-      'Notable projects include Logan Leisure Centres and Digital Child, delivering high-performance platforms with modern frontend and backend integrations.',
+      'Built using Laravel and React integrations, going beyond standard themes with custom functionality and optimized performance.',
+    info4: 'Projects include Logan Leisure Centres and Digital Child.',
     url: 'https://loganleisurecentres.com.au/',
     repo: '',
     involvement: ['Design Layout', 'Front End', 'Back End'],
@@ -105,7 +104,7 @@ export const projectsData = [
     title: 'WMS',
     info: 'Website',
     info2:
-      'Clean Wordpress theme built to provide the Water Modeling Solutions team the best experience on presenting, organizing and updating amazing case studies accross many cities in Australia and the islands.',
+      'Custom WordPress platform for managing and showcasing engineering case studies across multiple regions.',
     info3: '',
     url: 'https://wmseng.com.au/',
     repo: '',
@@ -117,7 +116,7 @@ export const projectsData = [
     title: 'Panorama',
     info: 'iOS App',
     info2:
-      'An interactive sales book application which provides everything a salesperson needs to showcase a project to potential buyers with the fastest access to documents and syncronized data.',
+      'Interactive sales app delivering fast access to project data and documents for real estate presentations.',
     info3: '',
     url: 'https://apps.apple.com/us/app/panorama-top-of-the-town/id1479155980',
     repo: '',
@@ -129,7 +128,7 @@ export const projectsData = [
     title: 'Moda',
     info: 'iOS/Kiosk App',
     info2:
-      'A powerful interactive cross-platform sales book application made to attend everything a salesperson needs to run an amazing presentation and captivate the attention of potential buyers from start to finish of the prospect...',
+      'Cross-platform interactive sales tool designed to deliver high-impact presentations for property buyers.',
     info3: '',
     url: 'https://modathehills.com.au/',
     repo: '',
@@ -139,43 +138,27 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
+  cta: 'Ready to build something? Great!',
+  btn: 'Let’s Chat',
   email: 'railtondsanto@gmail.com',
 };
 
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: nanoid(),
-      name: 'instagram',
-      url: 'https://www.instagram.com/rai.lton/',
-    },
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: 'https://twitter.com/rai_lton',
-    },
-    {
-      id: nanoid(),
-      name: 'facebook',
-      url: 'https://www.facebook.com/RailtonSt/',
-    },
+    { id: nanoid(), name: 'instagram', url: 'https://www.instagram.com/rai.lton/' },
+    { id: nanoid(), name: 'twitter', url: 'https://twitter.com/rai_lton' },
+    { id: nanoid(), name: 'facebook', url: 'https://www.facebook.com/RailtonSt/' },
     {
       id: nanoid(),
       name: 'linkedin',
       url: 'https://www.linkedin.com/in/railton-santos-37bb6a106/',
     },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: 'https://github.com/RailtonSantos',
-    },
+    { id: nanoid(), name: 'github', url: 'https://github.com/RailtonSantos' },
   ],
 };
 
-// Github start/fork buttons
+// Github buttons
 export const githubButtons = {
   isEnabled: false,
 };
