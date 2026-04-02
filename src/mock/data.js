@@ -23,13 +23,13 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne: `<b>Brazilian Full Stack Developer based in Brisbane-AU, focused on UI/UX, motion, and interactive digital experiences.</b>`,
-  paragraphTwo: `10+ years in software development, building scalable and performance-focused solutions for a wide range of business needs.`,
-  paragraphThree: `Strong background in <b>WordPress</b> and <b>Shopify</b> development, building custom plugins, integrations, and scalable <span style="white-space: nowrap;">e-commerce</span> solutions with a focus on user experience, conversion, and performance.`,
-  paragraphFour: `<b>Experienced in building web and mobile applications using Laravel, React Native, Vue.js, and Node.js.</b>`,
-  paragraphFive: `<b>Core stack includes PHP, JS/TypeScript, Vue.js, Node.js, MySQL, and MongoDB.</b>`,
-  paragraphSix: `Additional work with <b>Python</b> and <b>C#</b> for backend services, APIs, and automation tasks, including integration with modern development workflows.`,
-  paragraphSeven: `Comfortable working with LLM-based tools for debugging, refactoring, and rapid prototyping, with focus on performance, clean architecture, and user experience.`,
+  paragraphOne: `<b>Brazilian Full Stack Developer based in Greater Brisbane, Australia, specialized in UI/UX, motion, and interactive digital experiences.</b>`,
+  paragraphTwo: `10+ years of experience building scalable web and mobile applications across diverse businesses.`,
+  paragraphThree: `Strong background in <b>WordPress</b> and <b>Shopify</b>, developing custom plugins, integrations, and e-commerce platforms centered on user experience and conversion.`,
+  paragraphFour: `Experienced across frontend and backend using <b>React</b>, <b>Vue.js</b>, <b>Node.js</b>, <b>Laravel</b>, and <b>React Native</b>, delivering modern and interactive digital products.`,
+  paragraphFive: `Core stack includes <b>PHP</b>, <b>JavaScript/TypeScript</b>, <b>MySQL</b>, and <b>MongoDB</b>, with a strong focus on clean architecture and maintainable code.`,
+  paragraphSix: `Additional experience with <b>Python</b> and <b>C#</b> for APIs, automation, and backend services, integrated into modern workflows.`,
+  paragraphSeven: `Comfortable working with AI-assisted dev tools for debugging, refactoring, and rapid prototyping, with emphasis on UX, performance, and product quality.`,
   paragraphEight: `<b>I enjoy building cool stuff over a strong coffee <img height="20" src="/static/164fa633b66e3dad5f8f2159adfe9f5b/coffee.png"/></b>`,
   resume: 'RailtonSantos.pdf',
 };
